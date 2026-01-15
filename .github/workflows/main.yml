@@ -1,0 +1,11 @@
+name: Build Beast Android APK
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build APK via WebIntoApp CLI
+        run: |
+          echo "Starting build for Ad-Void Beast Engine..."
+          # এই কমান্ডটি তোর কোডকে এন্ড্রয়েড প্যাকেজে কনভার্ট করবে
